@@ -3,7 +3,7 @@ import aperture from '../lib/aperture.js'
 import R from 'ramda'
 const expect = chai.expect
 
-describe('aperture', () => {
+describe('Aperture', () => {
   it('Returns a new list, composed of n-tuples of consecutive elements!', () => {
     expect(aperture(2, [1, 2, 3, 4, 5]))
       .to.eql([[1, 2], [2, 3], [3, 4], [4, 5]])
