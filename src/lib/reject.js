@@ -7,9 +7,9 @@ const reject = ( fn, input ) => {
     })
   } else if (typeof input == 'object') {
     result = {}
-    for (var variable in input) {
-      if (!fn( input[variable] )) {
-        result[variable] = input[variable]
+    for (var key in input) {
+      if (!fn( input[key] )) {
+        result[key] = input[key]
       }
     }
   } else { result = 'input error'}
