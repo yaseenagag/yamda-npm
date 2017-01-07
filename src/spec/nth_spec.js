@@ -3,7 +3,7 @@ import nth from '../lib/nth.js'
 import R from 'ramda'
 const expect = chai.expect
 
-describe.only('Nth', () => {
+describe('Nth', () => {
   let list = [ 'foo', 'bar', 'baz', 'quux' ]
   it('Returns the nth element of the given array.', () => {
     expect( nth( 1, list )).to.eql( 'bar' )
