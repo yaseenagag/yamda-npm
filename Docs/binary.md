@@ -1,27 +1,29 @@
-# assoc
+# binary
 
-String → a → {k: v} → {k: v}
+(* → c) → (a, b → c)
 
 ## Function Description
 
-(prop)
-The property name to set
+(fn)
+The function to wrap.
 
-(val)
-The new value
-
-(obj)
-The object to clone
-
-Returns (Object) A new object equivalent to the original except for the changed property.
+Returns (function) A new function wrapping `fn`. The new function is guaranteed to be of arity 2.
 
 ## Function Technical Explanation
 
-Makes a shallow clone of an object, setting or overriding the specified property with the given value.
-Note that this copies and flattens prototype properties onto the new object as well.
-All non-primitive properties are copied by reference.
+Wraps a function of any arity (including nullary) in a function that accepts exactly 2 parameters.
+Any extraneous parameters will not be passed to the supplied function.
 
 ## Examples
 ```javascript
-R.assoc('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}
+var takesThreeArgs = function(a, b, c) {
+  return [a, b, c];
+};
+takesThreeArgs.length; //=> 3
+takesThreeArgs(1, 2, 3); //=> [1, 2, 3]
+
+var takesTwoArgs = R.binary(takesThreeArgs);
+takesTwoArgs.length; //=> 2
+// Only 2 arguments are passed to the wrapped function
+takesTwoArgs(1, 2, 3); //=> [1, 2, undefined]
 ```
