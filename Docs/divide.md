@@ -1,4 +1,4 @@
-# assoc
+# divide
 
 Number → Number → Number
 
@@ -25,5 +25,4 @@ half(42); //=> 21
 
 var reciprocal = R.divide(1);
 reciprocal(4);   //=> 0.25
-
 ```
