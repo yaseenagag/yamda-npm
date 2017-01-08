@@ -10,7 +10,7 @@ A sorting function :: a -> b -> Int
 (list)
 The list to sort
 
-Returns (Array) a new array with its elements sorted by the comparator function.
+Returns (Array) a new array with its elements sorted by the comparator function
 
 ## Function Technical Explanation
 
