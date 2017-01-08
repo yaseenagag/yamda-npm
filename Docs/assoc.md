@@ -2,7 +2,7 @@
 
 String → a → {k: v} → {k: v}
 
-## Function Description
+## Function Parameters
 
 (prop)
 The property name to set

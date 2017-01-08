@@ -4,7 +4,7 @@
 
 Number → Number → Number
 
-## Function Description
+## Function Parameters
 
 (list)
 The array to consider.

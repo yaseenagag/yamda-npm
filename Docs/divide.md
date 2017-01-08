@@ -2,7 +2,7 @@
 
 Number → Number → Number
 
-## Function Description
+## Function Parameters
 
 (a)
 The first value.

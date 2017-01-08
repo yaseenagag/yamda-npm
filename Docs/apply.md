@@ -2,7 +2,7 @@
 
 (*… → a) → [*] → a
 
-## Function Description
+## Function Parameters
 
 (fn)
 The function which will be called with args

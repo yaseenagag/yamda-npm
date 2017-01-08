@@ -2,7 +2,7 @@
 
 (* → c) → (a, b → c)
 
-## Function Description
+## Function Parameters
 
 (fn)
 The function to wrap.

@@ -2,7 +2,7 @@
 
 Number → [a] → [[a]]
 
-## Function Description
+## Function Parameters
 
 (n)
 The size of the tuples to create
